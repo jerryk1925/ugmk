@@ -361,6 +361,12 @@ p.bold {
   align-items: center;
 }
 
+@media only screen and (max-width: 1440px) {
+  .first-row {
+    margin-left: 200px;
+  }
+}
+
 @media only screen and (max-width: 1336px) {
   .first-row {
     margin-left: 119px;
@@ -438,6 +444,12 @@ p.bold {
   margin-left: 250px;
   display: flex;
   align-items: flex-start;
+}
+
+@media only screen and (max-width: 1440px) {
+  .second-row {
+    margin-left: 200px;
+  }
 }
 
 @media only screen and (max-width: 1336px) {
@@ -573,6 +585,12 @@ p.bold {
   margin-top: 28px;
   display: flex;
   margin-left: 203px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .three-row {
+    margin-left: 150px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
