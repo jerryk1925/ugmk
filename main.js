@@ -2,21 +2,31 @@ window.sr = ScrollReveal();
 sr.reveal('.first',{duration:2000});
 sr.reveal('.second',{duration:2000});
 sr.reveal('#three',{duration:2000});
-sr.reveal('#four',{duration:2000},);
-sr.reveal('#five',{duration:2000},);
-sr.reveal('#six',{duration:2000},);
+sr.reveal('#fourone',{duration:2000},);
+sr.reveal('#fourtwo',{duration:2500},);
+sr.reveal('#fourthree',{duration:3000},);
+sr.reveal('#five',{duration:3000},);
+sr.reveal('#sixone',{duration:2000},);
+sr.reveal('#sixtwo',{duration:2500},);
+sr.reveal('#sixthree',{duration:3000},);
 sr.reveal('#seven',{duration:2000},);
 sr.reveal('#eight',{duration:2000},);
-sr.reveal('#nine',{duration:2000},);
+sr.reveal('#nineone',{duration:2000},);
+sr.reveal('#ninetwo',{duration:2500},);
+sr.reveal('#ninethree',{duration:3000},);
 sr.reveal('#ten',{duration:2000},);
 sr.reveal('#eleven',{duration:2000},);
-sr.reveal('#twelve',{duration:2000},);
+sr.reveal('#twelveone',{duration:2000},);
+sr.reveal('#twelvetwo',{duration:2500},);
+sr.reveal('#twelvethree',{duration:3000},);
+sr.reveal('#twelvefive',{duration:3500},);
+sr.reveal('#twelvesix',{duration:4000},);
+sr.reveal('#twelveseven',{duration:4500},);
+sr.reveal('#twelveeight',{duration:5000},);
 sr.reveal('#thirteenth',{duration:2000},);
 sr.reveal('#fourteenth',{duration:2000},);
 sr.reveal('#fifteenth',{duration:2000},);
-sr.reveal('#sixteenth',{duration:2000},);
 sr.reveal('#eightteenth',{duration:2000},);
-sr.reveal('#twenty',{duration:2000},);
 sr.reveal('#twentyone',{duration:2000},);
 sr.reveal('#twentytwo',{duration:2000},);
 sr.reveal('#twentythree',{duration:2000},);
@@ -134,7 +144,7 @@ const instanceStanEight= new Tooltip(staneight, {
   title: "Линейный реверсивный стан, состоит из трёх клетей – обжимная, черновая, чистовая. Для нагрева слитков до температуры прокатки имеется шесть групп одноместных регенеративных нагревательных колодцев с общим количеством ячеек 147. Отопление колодцев производится смесью доменного и природного газов. Резка раскатов проката выполняется пилами ударного действия с ременным приводом режущего диска модели РР-2000. Выполняется резка полного сортамента проката круглого сечения диаметром от 140 до 300 мм включ., резка проката квадратного сечения со стороной от 130 до 220 мм включ. Охлаждение проката выполняется на воздухе или термосах замедленного охлаждения. Транспортировка проката для охлаждения выполняется мостовыми кранами, оборудованных механизированными клещами для транспортировки проката. Обработка металлопроката выполняется на адъюстаже цеха, имеющим в составе участок обработки передельной заготовки и участки обработки товарного проката. Продукция: товарный прокат и трубная заготовкаsдиаметром от 140 до 300 мм, осевая заготовка квадратного сечения со стороной 215 и 230 мм, товарна заготовка квадратного сечения со стороной от 150 до 220 мм, передельная заготовка квадратного сечения со стороной 130, 140, 170, 180, 184 мм. Годовой объем производства – 628 050 тонн. "
 });
 const instanceCar= new Tooltip(car, {
-  placement: 'bottom',
+  placement: 'top',
   title: "УГМК-Сталь организует комплексные поставки, используя железнодорожную сеть и автотранспорт Пачки прутков маркируются двумя пластиковыми ярлыками, содержащие следующую информацию: товарный знак и наименование предприятия изготовителя; НТД; номинальный размер, марку стали, номер плавки, длину порезки, вес пакета, номер пакета и дату производства. Упаковка производится в соответствии с ГОСТ 7566-94. "
 });
 const instanceCartwo= new Tooltip(cartwo, {
@@ -163,3 +173,21 @@ if (document.body.clientWidth<=768){
   instanceVtwo.updateTitleContent('Два слова')
   instanceDspt.updateTitleContent('Два слова')
 }
+var lineDrawing = anime({
+  targets: '.lineDrawing .lines line',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 2000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+var nineDrawing = anime({
+  targets: '#ninethree .path path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 2000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});

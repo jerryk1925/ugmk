@@ -923,5 +923,5 @@ p.bold {
 
 .col:hover {
   position: relative;
-  z-index: 2000000;
+  z-index: 9000000;
 }
