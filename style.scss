@@ -5,7 +5,7 @@
 @font-face {
     font-family: "ProximaNova-Regular";
     src: url(font/ProximaNova-Regular.ttf);
-  }
+}
 .svg-content:hover .st0{
     stroke: white;
 }
@@ -94,7 +94,7 @@ p.bold {
     position: absolute;
     background: #F39416;
     color: black;
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 3px;
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
     padding: 10px;
@@ -103,9 +103,9 @@ p.bold {
 .style5 .tooltip {
     background: #1E252B;
     color: #FFFFFF;
-    max-width: 200px;
+    max-width: 500px;
     width: auto;
-    font-size: .8rem;
+    font-size: .5rem;
     padding: .5em 1em;
 }
 .tooltip .tooltip-arrow {
@@ -674,6 +674,14 @@ p.bold {
     @media only screen and (max-width: 720px) {
         width: 240px;
      } 
+}
+// #twelve{
+//     position: relative;
+//     z-index: 200000;
+// }
+.col:hover{
+    position: relative;
+    z-index: 2000000;
 }
 // .oretwo{
 //     margin-top: 15px;
